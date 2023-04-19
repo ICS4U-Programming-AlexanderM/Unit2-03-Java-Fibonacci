@@ -58,7 +58,7 @@ public final class Fibonacci {
                 // Check for errors.
                 try {
                     // Check if number is negative.
-                    if (Integer.parseInt(numStr) <= 0) {
+                    if (Integer.parseInt(numStr) < 0) {
                         System.out.println("Number must be positive.");
                     } else {
                         // Call function.
@@ -91,9 +91,9 @@ public final class Fibonacci {
     */
     public static int fibSequence(int number) {
         // Detect if the number is less than one.
-        if (number == 1) {
+        if (number == 0) {
             return 0;
-        } else if (number == 2) {
+        } else if (number == 1) {
             return 1;
         } else {
             // Re-call the function.
